@@ -36,19 +36,7 @@ if(filteredExpenses.length > 0) {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-{expenseContent}
-        {/*filteredExpenses.length === 0 ? (
-          <p>No expenses found</p>
-        ) : (
-          filteredExpenses.map((expense) => (
-            <ExpenseItem
-              key={expense.id}
-              title={expense.title}
-              amount={expense.amount}
-              date={expense.date}
-            />
-          ))
-          )*/}
+{expenseContent}        
       </Card>
     </div>
   );
